@@ -2,7 +2,8 @@ pipeline {
   agent { label 'electronix' }
 
   stages {
-    stage ('Hello'){ steps { echo "Hello Jenkins" } }
-    stage ('Hello-Second'){ steps { echo "Hello Jenkins Second" } }
+    stage ('Build'){ steps { echo "Build java application" } }
+    stage ('Test'){ steps { echo "Test application" } }
+    stage ('Deploy'){ steps { echo "Deploy application on server" } }
     }
 }
