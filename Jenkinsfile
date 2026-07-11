@@ -7,3 +7,12 @@ pipeline {
     stage ('Deploy'){ steps { echo "Deploy application on server" } }
     }
 }
+
+post{
+  success {
+    echo "Pipeline Pass "
+  }
+  failure {
+    echo "Pipeline Fail "
+  }
+}
