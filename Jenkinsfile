@@ -24,6 +24,9 @@ pipeline {
     post {
         success {
             echo "Pipeline Pass"
+            mail to : "koshtimanas@gmail.com",
+            subject : "SUCCESS ",
+            body : "Email working"
         }
 
         failure {
